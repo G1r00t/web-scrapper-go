@@ -4,20 +4,20 @@ This project is a comprehensive web scraping toolkit developed in Go, leveraging
 
 ## Features
 
-1. E-commerce Product Scraper
+1. E-commerce Product Scraper (scrapper1.go)
    - Scrapes product information from an e-commerce website
    - Handles pagination automatically
    - Saves data to a CSV file
 
-2. G2.com Review Scraper
+2. G2.com Review Scraper(scrapper2.go)
    - Attempts to scrape reviews from G2.com
    - Utilizes proxy support for enhanced anonymity
 
-3. ZenRows API Integration
+4. ZenRows API Integration(scrapper3.go)
    - Fetches and saves HTML content from G2.com using the ZenRows API
    - Demonstrates integration with third-party services for web scraping
 
-4. Parallel Scraping
+5. Parallel Scraping(scrapper4.go)
    - Implements concurrent scraping of multiple pages
    - Showcases Go's powerful concurrency features
 
