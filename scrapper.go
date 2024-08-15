@@ -18,7 +18,7 @@ func main() {
 	var products []product
 	var visitedUrls sync.Map
 	c := colly.NewCollector(
-		colly.AllowedDomains("www.scrapingcourse.com"),
+		colly.AllowedDomains("your-website"),
 	)
 	c.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 	c.OnHTML("li.product", func(e *colly.HTMLElement) {
@@ -84,6 +84,6 @@ func main() {
 		defer writer.Flush()
 		fmt.Println(r.Request.URL, "Scrapped!")
 	})
-	c.Visit("https://www.scrapingcourse.com/ecommerce")
+	c.Visit("your-website")
 
 }
