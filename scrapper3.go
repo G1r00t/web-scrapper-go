@@ -15,23 +15,14 @@ type Product struct {
 
 func main() {
 	pagesToScrape := []string{
-		"https://www.scrapingcourse.com/ecommerce/page/1/",
-		"https://www.scrapingcourse.com/ecommerce/page/2/",
-		"https://www.scrapingcourse.com/ecommerce/page/3/",
-		"https://www.scrapingcourse.com/ecommerce/page/4/",
-		"https://www.scrapingcourse.com/ecommerce/page/5/",
-		"https://www.scrapingcourse.com/ecommerce/page/6/",
-		"https://www.scrapingcourse.com/ecommerce/page/7/",
-		"https://www.scrapingcourse.com/ecommerce/page/8/",
-		"https://www.scrapingcourse.com/ecommerce/page/9/",
-		"https://www.scrapingcourse.com/ecommerce/page/10/",
-		"https://www.scrapingcourse.com/ecommerce/page/11/",
-		"https://www.scrapingcourse.com/ecommerce/page/12/",
+		"your-website/page/1/",
+		"yourwebsite/page/2/",
+		
 	}
 
 	// instantiate a new collector object
 	c := colly.NewCollector(
-		colly.AllowedDomains("www.scrapingcourse.com"),
+		colly.AllowedDomains("your-website"),
 		colly.Async(true),
 	)
 
