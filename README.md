@@ -69,4 +69,30 @@ This project is for educational purposes only. Always respect website terms of s
 ## Contributing
 
 Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/your-username/web-scraping-suite/issues) if you want to contribute.
+```mermaid
+graph TD
+    A[📁 Source Code Repository] --> B[🔍 Semgrep SAST Scan]
+    B --> C[⚠️ Raw Vulnerability Findings<br/>~750 alerts]
+    
+    C --> D[🧠 AI-SAST Processing Pipeline]
+    
+    D --> E[🔍 Stage 1: Dead Code Detection]
+    E --> F[🔗 Stage 2: Context Extraction]
+    F --> G[🤖 Stage 3: LLM Analysis]
+    G --> H[📊 Stage 4: Smart Classification]
+    
+    H --> I[🔴 Must Fix<br/>Critical & Reachable]
+    H --> J[🟡 Good to Fix<br/>Minor & Reachable] 
+    H --> K[⚪ False Positive<br/>Dead Code & Safe Patterns]
+    
+    I --> L[🚨 Priority Alert to Developer]
+    J --> M[📋 Backlog for Security Review]
+    K --> N[🗑️ Filtered Out]
+    
+    style A fill:#e1f5fe
+    style D fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px
+    style I fill:#ffebee,stroke:#f44336,stroke-width:2px
+    style J fill:#fff3e0,stroke:#ff9800,stroke-width:2px
+    style K fill:#f1f8e9,stroke:#4caf50,stroke-width:2px
+```
 
